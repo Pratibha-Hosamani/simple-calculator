@@ -1,0 +1,33 @@
+
+h2{
+    color:maroon;
+}
+button{
+    width: 80px;
+    height: 50px;
+    font-family: sans-serif;
+    background-color: darkgoldenrod;
+    color:white;
+    border:solid black 3px;
+}
+button[id="calc"]{
+    font-size: larger;
+    color:black ;
+    font-style: bold;
+    border:solid black;
+}
+button[id="result"]{
+    font-size: larger;
+    border:solid black;
+}
+button[id="clear"]{
+    width: 350px;
+    height:50px;
+    background-color: red;
+}
+input{
+    width: 330px;
+    height: 40px;
+    background-color: beige;
+    border:solid black;
+}

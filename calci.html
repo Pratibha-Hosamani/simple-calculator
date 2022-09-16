@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link rel="stylesheet" href="prg1.css">
+</head>
+<script>
+    function display(value) {
+        document.getElementById("calc").value += value;
+    }
+    function cls() {
+        document.getElementById("calc").value = "";
+    }
+    function result() {
+        var p = document.getElementById("calc").value;
+        var q = eval(p);
+        document.getElementById("calc").value = q;
+    }
+</script>
+
+<body>
+    <center>
+        <h2> Calculator</h2>
+        <input type="text" class="display-box" id="calc" disabled /><br><br>
+            <button type="button" onclick="display('9')">9</button>
+            <button type="button" onclick="display('8')">8</button>
+            <button type="button" onclick="display('7')">7</button>
+            <button type="button" id="symbol" onclick="display('+')">+</button><br><br>
+            <button type="button" onclick="display('6')">6</button>
+            <button type="button" onclick="display('5')">5</button>
+            <button type="button" onclick="display('4')">4</button>
+            <button type="button" id="symbol" onclick="display('-')">-</button><br><br>
+            <button type="button" onclick="display('3')">3</button>
+            <button type="button" onclick="display('2')">2</button>
+            <button type="button" onclick="display('1')">1</button>
+            <button type="button" id="symbol" onclick="display('*')">*</button><br><br>
+            <button type="button" id="symbol" onclick="display('/')">/</button>
+            <button type="button" onclick="display('0')">0</button>
+            <button type="button" onclick="display('.')">.</button>
+            <button type="button" id="result" onclick="result()">=</button><br><br>
+            <button type="button" id="clear" Onclick="cls()">Clear All</button>
+    </center>
+</body>
+
+</html>
